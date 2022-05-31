@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.board_wrap{
+    width: 1200px;
+    margin: 100px auto;
+}
+.match{
+    width: 1200px;
+    margin: 100px auto;
+}
+.board_title{
+    margin-bottom: 30px;
+}
+.board_title strong{
+    font-size: 3rem;
+}
+.board_title p{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:15px;
+	line-height:32px;
+	padding:5px 35px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#f6f6f6
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:250px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+  
+  /* Just for the fallback layout */
+  
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  article {
+    margin: 1rem 0;
+  }
+  
+  /* Now lets do a Grid-based layout */
+  
+  @supports (display: grid) {
+    main { 
+      max-width: 10000px;
+      margin: 0;
+    }
+    article {
+      margin: 0;
+    }
+    .deals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+    
+  .deals {
+    font-family: Avenir, Roboto, Helvetica, san-serif; 
+    font-size: 80%;
+  }
+  .sale-item {
+    display: flex;
+    flex-flow: column;
+    border:  1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .sale-item > h1 {
+    margin: 1rem 1rem 0;
+  }
+  .sale-item > ul {
+    margin: 0 0 1rem;
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  .sale-item > p {
+    margin: 0.25em 1rem 1rem;
+    font-size: 15px;
+  }
+  .sale-item > img {
+    order: -1;
+    align-self: center;
+  }
+  .sale-item > .button1 {
+    margin-top: auto;
+    margin-bottom: 10px;
+    background:turquoise;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+  .sale-item > .button2 {
+    margin-top: auto;
+    margin-bottom: 10px;
+    background:grey;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,96 @@
+.centers__items {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 24px;
+  list-style:none;
+}
+
+.centers__list{
+  float: left;
+}
+
+.centers__item__img:hover {
+  transform: scale(1.1);
+}
+.centers__item__info {
+  padding: 20px 30px 30px;
+}
+.centers__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media only screen and (min-width: 1024px) {
+  .centers__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .centers__item {
+    margin-bottom: 2rem;
+  }
+}
+.centers__item__img {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+        margin: 10px 10px 10px 10px;
+  }
+
+.center__main__div{
+    display: flex;
+    justify-content: center;
+}
+
+.div_left{
+  float: left;
+  width: 100%;
+}
+
+.container {
+  width: 30%;
+  box-shadow: 0 4px 5px 0 #00000026;
+  position: absolute;
+  left: 30%;
+}
+#dropdown {
+  left: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.dropdownLabel {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 5px 0 #00000026;
+} 
+#dropdown:checked + label + div {
+  display: block;
+  border-top: 1px solid #00000026;
+}
+.caretIcon {
+  transition: transform 250ms ease-out;
+}
+#dropdown:checked + label > .caretIcon {
+  transform: rotate(-180deg);
+}
+.content ul {
+  list-style-type: none;
+  padding: 12px;
+  margin: 0;
+}
+.content ul li {
+  margin: 0.8rem 0;
+}
+
+.create_center{
+  margin-top: 5%;
+}
